@@ -21,7 +21,7 @@ class Array_input{
 		for(int i=0;i<n;i++){
 			System.out.print("Array("+i+"): ");
 			nums[i]=sc.nextInt();
-			/* System.out.println("Raw - Array\n"+Arrays.toString(nums)); */
+			/* System.out.println("Raw - Array\n"+Arrays.toString(nums)); */
 		}
 	}
 }

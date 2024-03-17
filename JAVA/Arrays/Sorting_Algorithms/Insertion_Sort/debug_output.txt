@@ -1,0 +1,79 @@
+Enter size of the Array(n):
+5
+Array(0): 80
+Array(1): 70
+Array(2): 50
+Array(3): 40
+Array(4): 20
+Before Sorting the array is: [80, 70, 50, 40, 20]
+/***************************/
+nums[i]: 80
+/***************************/
+nums[j]: 70
+--------------------------------------
+nums[i]: 80 nums[j]: 70
+nums[i]: 80 > nums[j]: 70
+nums[i]: 70 nums[j]: 80
+Now the array is: [70, 80, 50, 40, 20]
+xxxxxxxxxxxxxx--end--xxxxxxxxxxxxxxxxx
+nums[j]: 70
+--------------------------------------
+nums[i]: 70<<<else<<< nums[j]: 70
+/***************************/
+nums[i]: 80
+/***************************/
+nums[j]: 50
+--------------------------------------
+nums[i]: 80 nums[j]: 50
+nums[i]: 80 > nums[j]: 50
+nums[i]: 50 nums[j]: 80
+Now the array is: [70, 50, 80, 40, 20]
+xxxxxxxxxxxxxx--end--xxxxxxxxxxxxxxxxx
+nums[j]: 50
+--------------------------------------
+nums[i]: 50<<<else<<< nums[j]: 50
+nums[j]: 70  /*The Problem is Here - Line 35*/
+--------------------------------------
+nums[i]: 50<<<else<<< nums[j]: 70
+/***************************/
+nums[i]: 80
+/***************************/
+nums[j]: 40
+--------------------------------------
+nums[i]: 80 nums[j]: 40
+nums[i]: 80 > nums[j]: 40
+nums[i]: 40 nums[j]: 80
+Now the array is: [70, 50, 40, 80, 20]
+xxxxxxxxxxxxxx--end--xxxxxxxxxxxxxxxxx
+nums[j]: 40
+--------------------------------------
+nums[i]: 40<<<else<<< nums[j]: 40
+nums[j]: 50
+--------------------------------------
+nums[i]: 40<<<else<<< nums[j]: 50
+nums[j]: 70
+--------------------------------------
+nums[i]: 40<<<else<<< nums[j]: 70
+/***************************/
+nums[i]: 80
+/***************************/
+nums[j]: 20
+--------------------------------------
+nums[i]: 80 nums[j]: 20
+nums[i]: 80 > nums[j]: 20
+nums[i]: 20 nums[j]: 80
+Now the array is: [70, 50, 40, 20, 80]
+xxxxxxxxxxxxxx--end--xxxxxxxxxxxxxxxxx
+nums[j]: 20
+--------------------------------------
+nums[i]: 20<<<else<<< nums[j]: 20
+nums[j]: 40
+--------------------------------------
+nums[i]: 20<<<else<<< nums[j]: 40
+nums[j]: 50
+--------------------------------------
+nums[i]: 20<<<else<<< nums[j]: 50
+nums[j]: 70
+--------------------------------------
+nums[i]: 20<<<else<<< nums[j]: 70
+After Sorting the array is: [70, 50, 40, 20, 80]

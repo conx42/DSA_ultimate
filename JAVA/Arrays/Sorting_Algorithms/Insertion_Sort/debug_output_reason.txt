@@ -1,0 +1,3 @@
+pointer -> j -) was decreasing by 1 after inner loop was executed
+but
+pointer -> i -) wasn't decreasing by 1 after inner loop was executed
