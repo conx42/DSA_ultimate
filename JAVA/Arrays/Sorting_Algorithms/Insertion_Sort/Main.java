@@ -26,11 +26,15 @@ class Insertion_Sort{
 		Intution of this Insertion Sort(Ascending Order) Algorithm is ->
 	*/
 	public void Sort(int []nums, int n){
-		for(int i=0; i<=(n-2); i++){
+		int flag=0;
+		for(int i=0; i<=(n-2) && i>=0; i++){
+			flag++;
 			System.out.println("/***************************/");
 			System.out.println("nums[i]: "+nums[i]);
 			System.out.println("/***************************/");
-			for(int j=(i+1); j>=0; --j){
+			int j;
+			for(j=(i+1); j>=0; --j){
+				System.out.println("nums[i]: "+nums[i]);
 				System.out.println("nums[j]: "+nums[j]);
 				System.out.println("--------------------------------------");
 				if(nums[i]>nums[j]){ // Ascending order sorting
@@ -43,8 +47,15 @@ class Insertion_Sort{
 				}else{
 					System.out.println("nums[i]: "+nums[i]+"<<<else<<< nums[j]: "+nums[j]);
 					// System.out.println("Now the array is: "+Arrays.toString(nums));
+					break;
+				}
+				if(i>0){
+					i--;
 				}
 			}
+			// if (flag==10) {
+			// 	System.exit(0);
+			// }
 		}
 	}
 }
