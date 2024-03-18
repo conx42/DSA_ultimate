@@ -1,0 +1,10 @@
+[
+{
+if our algorithm includes -> [j-1] instead [i]/'i--'
+and not_doing -> 'i--' at any step
+}
+we may not include 'break;' statement, and infinite loop will not happen.
+Q) why the loop will not run infinitely (without break; statement)?
+Ans:- Because inner-Loop(or j-th Loop) will terminate anyway, 
+	  so that's why there is no chance of infinite loop.
+]
