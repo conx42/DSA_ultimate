@@ -7,4 +7,7 @@ we may not include 'break;' statement, and infinite loop will not happen.
 Q) why the loop will not run infinitely (without break; statement)?
 Ans:- Because inner-Loop(or j-th Loop) will terminate anyway, 
 	  so that's why there is no chance of infinite loop.
+NOTE:-
+	Though the algorithm is working, but in our understanding using 'break;' is a good practice.
+	Because we don't want to iterate over the Already-sorted-Array.
 ]

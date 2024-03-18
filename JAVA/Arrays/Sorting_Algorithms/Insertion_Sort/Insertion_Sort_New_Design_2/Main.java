@@ -26,6 +26,8 @@ class Insertion_Sort{
             for (int j=i+1; j>=1; j--) { //This inner-Loop will terminate when 'j=0' then only.
                 if(nums[j]<nums[j-1]){
                     Swap.swap(nums, j, j-1);
+                }else{
+                	break; // good practice
                 }
             }
         }
