@@ -1,0 +1,11 @@
+[
+{
+if our algorithm includes -> i
+and doing -> 'i--' at any step
+}
+we have to include 'break;' statement, otherwise the loop will run infinitely.
+Q) why the loop will run infinitely (without break; statement)?
+Ans:- in inner-Loop(or j-th Loop) i will come to index = 0 
+	  && after that the outer-Loop(or i-th Loop) again iterate
+	  the sorted array again. By this way it makes an infinite loop without break;
+]
